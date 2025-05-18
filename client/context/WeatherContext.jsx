@@ -4,8 +4,10 @@ import axios from 'axios';
 export const WeatherContext = createContext();
 
 export const WeatherProvider = ({ children }) => {
-  const API_BASE_URL =  'http://localhost:5000/api/weather';
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+
+  
+  const API_BASE_URL = import.meta.env.VITE_BACKEND_URL ;
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
   const [darkMode, setDarkMode] = useState(false);
   const [currentWeather, setCurrentWeather] = useState(null);
   const [forecast, setForecast] = useState(null);
