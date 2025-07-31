@@ -20,7 +20,6 @@ const CurrentWeather = ({ minimal = false }) => {
     fetchWeather,
     location
   } = useWeather();
-
   useEffect(() => {
     if (currentWeather) {
       setPreviousWeather(currentWeather);

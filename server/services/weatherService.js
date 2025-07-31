@@ -3,7 +3,7 @@ const Search = require('../models/Search');
 const geoHelper = require('../utils/geoHelper');
 
 const API_KEY = process.env.WEATHER_API_KEY;
-const BASE_URL = 'https://api.weatherapi.com/v1';
+const BASE_URL = 'https://api.weatherapi.com/v1/';
 
 exports.fetchCurrentWeather = async (location) => {
   try {
